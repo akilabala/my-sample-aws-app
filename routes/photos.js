@@ -23,9 +23,9 @@ router.get('/id/:id', function(req, res) {
 /* GET photo search */
 router.get('/search', function(req, res) {
 
-	if (req.param('query')) {
+	if (req.query.key) {
 		var params = {
-			query: req.param('query')
+			query: req.query.key
 		};
 		model.getPhotosSearch(params, function(err, obj) {
 			if (err) {
