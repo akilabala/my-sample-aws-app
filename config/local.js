@@ -1,4 +1,4 @@
-module,exports = {
+module.exports = {
     db : {
         host: 'localhost',
         port: 8889,
